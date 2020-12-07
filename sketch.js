@@ -100,7 +100,7 @@ function draw() {
     if (frameCount % 60 == 0 && finalTimer > 0) {
       finalTimer--
     }
-    if (finalTimer > 0 && mouseX < width && mouseX<0 and mouseY < height && mouseY > 0) {
+    if (finalTimer > 0 && mouseX < width && mouseX<0 && mouseY < height && mouseY > 0) {
       noStroke()
       let circSize = int(random(1, 10))
 
