@@ -100,7 +100,7 @@ function draw() {
     if (frameCount % 60 == 0 && finalTimer > 0) {
       finalTimer--
     }
-    if (finalTimer > 0) {
+    if (finalTimer > 0 && mouseX < width && mouseX<0 and mouseY < height && mouseY > 0) {
       noStroke()
       let circSize = int(random(1, 10))
 
@@ -108,12 +108,6 @@ function draw() {
       ellipse(mouseX, mouseY, circSize)
     } else {
       image(img, 0, 0)
-
-      noStroke()
-      let circSize = int(random(1, 10))
-
-      fill(pixDict[`${int(mouseX)},${int(mouseY)}`])
-      ellipse(mouseX, mouseY, circSize)
     }
   }
 
